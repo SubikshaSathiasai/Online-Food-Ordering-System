@@ -1,6 +1,8 @@
 # Online-Food-Ordering-System - College Mini-Project
 
-Welcome to the Sooru Food Ordering System, a mini-project developed specifically for our college students!
+
+
+Welcome to the Sooru - Online Food Ordering System, a mini-project developed by a team of 4 for our college students!
 
 ## Table of Contents
 
@@ -47,6 +49,5 @@ Ensure that these dependencies are properly set up before running the applicatio
 
 ## Contributing
 
-Contributions to the Sooru Food Ordering System are welcome! If you have any ideas, improvements, or bug fixes, feel free to contribute. You can fork the repository, make your changes, and submit a pull request with your proposed modifications.
-
+The Sooru Food Ordering System was developed by a team of 4 college students. We appreciate and welcome contributions from the community. If you have any ideas, improvements, or bug fixes, feel free to contribute. You can fork the repository, make your changes, and submit a pull request with your proposed modifications.
 
