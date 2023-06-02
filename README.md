@@ -9,7 +9,7 @@ Welcome to the Sooru Food Ordering System, a mini-project developed specifically
 - [Usage](#usage)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Description
 
@@ -49,7 +49,4 @@ Ensure that these dependencies are properly set up before running the applicatio
 
 Contributions to the Sooru Food Ordering System are welcome! If you have any ideas, improvements, or bug fixes, feel free to contribute. You can fork the repository, make your changes, and submit a pull request with your proposed modifications.
 
-## License
-
-The Sooru Food Ordering System is released under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
 
