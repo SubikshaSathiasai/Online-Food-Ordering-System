@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            color: white;
+        }
+        
+        .img {
+            height: auto;
+            width: auto;
+        }
+        
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .column {
+            float: left;
+            width: 20%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+        
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        
+        .container {
+            padding: 0 16px;
+        }
+        
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .title {
+            color: grey;
+        }
+        
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .button:hover {
+            background-color: #555;
+        }
+        
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+        
+        .about-cross {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body style="background-image : linear-gradient(to right, black, purple)">
+    <div class="about-cross">
+        <a href="index.html">
+            <img src="exit.ico" alt="" width="25" height="25">
+        </a>
+    </div>
+    <div class="about-section">
+        <img src="sooru2.png" alt="error" width="300px">
+        <p style="color: rgb(255, 0, 255);">KIOT online food ordering service</p>
+    </div>
+    
+    <div>
+        <p> </p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <a href="solid.html">
+                    <img src="biriyani.jpeg" alt="Biryani" style="width:100%">
+                </a>
+                <div class="container">
+                    <h2>Solid Dish</h2>
+                    <p class="title">Breakfast / Lunch / Snacks</p>
+                    <a href="solid.html">
+                        <p><button class=" button ">Check Out</button></p>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column ">
+            <div class="card ">
+                <a href="liquid.html">
+                    <img src="liquid.jpeg" alt="liquid" style="width:100% ">
+                </a>
+                <div class="container ">
+                    <h2>Liquid Dish</h2>
+                    <p class="title ">MilkShake / Juice / Refreshments</p>
+                    <a href="liquid.html">
+                        <p><button class=" button ">Check Out</button></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column ">
+            <div class="card ">
+                <a href="canteendetails.html">
+                    <img src="kiot.png" alt="KIOTcanteen" style="width:100% ">
+                </a>
+                <div class="container ">
+                    <h2>KIOT Canteen</h2>
+                    <p class="title ">Canteen Details</p>
+                    <a href="canteendetails.html">
+                        <p><button class=" button ">Check Out</button></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column ">
+            <div class="card ">
+                <a href="contactus.html">
+                    <img src="contact.png" alt="contactus" style="width:100% ">
+                </a>
+                <div class="container ">
+                    <h2>Contact Us</h2>
+                    <p class="title ">Report Issues / Queries</p>
+                    <a href="contactus.html">
+                        <p><button class=" button ">Contact</button></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="sooru.css">
+  </head>
+  <body>
+    <form>
+        
+        
+        <div id="login_div" class="main-div">
+            <div class="center">
+                <div class="about-sec">
+                    <img class="logo" src="sooru2.png" alt="">
+                    
+                </div>
+                <div>
+                    <p></p>
+                </div>
+                
+                <label for="name">Name</label>  
+                <input id="name" name="name" style="background-color: rgba(0, 0, 0, 0.336); border: 1px solid rgb(22, 22, 22); color: rgb(255, 0, 255)" placeholder="Gpay Name?">
+
+                <label for="email">email</label>
+                <input id="email" name="email" style="background-color: rgba(0, 0, 0, 0.336); border: 1px solid rgb(22, 22, 22); color: rgb(255, 0, 255)" placeholder="College ID?">
+
+                <label for="message">Subject</label>
+                <input id="message" name="message" style="background-color: rgba(0, 0, 0, 0.336); border: 1px solid rgb(22, 22, 22); color: rgb(255, 0, 255)" placeholder="Message">
+                <div class="about-secc">
+                    <button id="submit_msg" class="glow-on-hover" type = "button">Gpay</button>
+                </div>
+            </div>
+        </div>
+    </form>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+  <script type="text/javascript">
+    (function() {
+        const firebaseConfig = {
+
+            apiKey: "AIzaSyDONVGNGcJGRSdcPPiZ0d9w_WXzvHrE8s8",
+          
+            authDomain: "sooru-7640f.firebaseapp.com",
+          
+            projectId: "sooru-7640f",
+          
+            storageBucket: "sooru-7640f.appspot.com",
+          
+            messagingSenderId: "234431435290",
+          
+            appId: "1:234431435290:web:990e0853f6302b2d8177a3",
+          
+            measurementId: "G-BPTTF886G1"
+          
+          };
+          
+      firebase.initializeApp(firebaseConfig);
+
+      const push_to_firebase = function(data){
+        alert("Click okay to confirm your order Chicken Rice")
+        const db = firebase.firestore();
+
+        db.collection("messages").add({
+            name: data["name"],
+            email: data["email"],
+            message: data["msg"],
+            timestamp: Date.now()
+        })
+        .then(function(docRef) {
+            console.log("Message sent, ID: ", docRef.id);
+            location.reload();
+        })
+        .catch(function(error) {
+            console.error("Message could not be sent: ", error);
+        });
+      }
+
+      const contact_submit = function(){
+        var name = document.getElementById("name");
+        var email = document.getElementById("email");
+        var msg = document.getElementById("message");
+
+        const data = {
+          "name": name.value,
+          "email": email.value,
+          "msg": msg.value + " Chicken Rice : ₹60"
+        }
+        push_to_firebase(data);
+
+      }
+
+      document.getElementById("submit_msg").addEventListener("click", contact_submit);
+    })();
+  </script>
+</html>
