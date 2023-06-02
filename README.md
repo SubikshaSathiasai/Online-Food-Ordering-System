@@ -1,6 +1,4 @@
-# Online-Food-Ordering-System
-
-# Sooru Food Ordering System - College Mini-Project
+# Online-Food-Ordering-System - College Mini-Project
 
 Welcome to the Sooru Food Ordering System, a mini-project developed specifically for our college students!
 
